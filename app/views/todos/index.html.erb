@@ -1,6 +1,6 @@
 <h3>To Do List</h3>
 
-<%= form_tag("/todos/add", :method => "post") do %>
+<%= form_tag("/add", :method => "post") do %>
 	<%= text_field_tag(:todo_text) %>
 	<%= submit_tag("Add Item", :class => "btn btn-inverse")%>
 <% end %>
@@ -17,4 +17,4 @@
 	</div>
 </div>
 
-<%= link_to 'Delete last item', '/todos/delete' %>
+<%= link_to 'Delete last item', '/delete' %>
