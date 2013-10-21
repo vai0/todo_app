@@ -2,7 +2,7 @@ TodoApp::Application.routes.draw do
   # get "todos/index"
   # get "todos/delete"
   # post "todos/add"
-
+  root 'todos#index'
   match '/index',   to: 'todos#index',  via: 'get'
   match '/delete',  to: 'todos#delete', via: 'get'
   match '/add',     to: 'todos#add', via: 'post'
