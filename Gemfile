@@ -46,6 +46,7 @@ end
 
 group :producion do 
 	gem 'pg'
+	gem 'thin'
 end
 
 # Use ActiveModel has_secure_password
