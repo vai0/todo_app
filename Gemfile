@@ -47,6 +47,7 @@ end
 group :producion do 
 	gem 'pg'
 	gem 'thin'
+	gem 'rails_12factor'
 end
 
 # Use ActiveModel has_secure_password
