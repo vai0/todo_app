@@ -15,5 +15,4 @@ if Rails.env.production? && ENV['PUSHER_SECRET_TOKEN'].blank?
   raise 'PUSHER_SECRET_TOKEN environment variable must be set!'
 end
 
-TodoApp::Application.config.secret_token = 
-  ENV['PUSHER_SECRET_TOKEN'] || '1b38416c73a9cdc579046831489a852875b042f9205b520022e01a9df314b66c32056460691caf8c2c3406e6dda2689f91e15038a0e951d0fe12251552ed72ad'
+TodoApp::Application.config.secret_token = ENV['PUSHER_SECRET_TOKEN']
